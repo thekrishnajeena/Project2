@@ -3,12 +3,12 @@ import os
 import httpx
 import json
 
-LLM_API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjI0ZjIwMDU4OTRAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.11Pa3UNcezX27plvgMxnAvONVP2IsVa6ynIUVYuZuoY"
+LLM_API_KEY = os.getenv("LLM_API_KEY")
 LLM_API_URL = os.getenv("LLM_API_URL") or "https://aipipe.org/openrouter/v1/chat/completions"
 DEFAULT_MODEL = os.getenv("LLM_MODEL") or "gpt-5-nano"  # change to your model
 
 HEADERS = {
-    "Authorization": f"Bearer {LLM_API_KEY}" if LLM_API_KEY else "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjI0ZjIwMDU4OTRAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.11Pa3UNcezX27plvgMxnAvONVP2IsVa6ynIUVYuZuoY",
+    "Authorization": f"Bearer {LLM_API_KEY}" if LLM_API_KEY else "",
     "Content-Type": "application/json",
 }
 

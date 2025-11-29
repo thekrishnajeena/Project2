@@ -16,6 +16,9 @@ class QuizRequest(BaseModel):
     secret: str
     url: str
 
+@app.get("/")
+async def project2():
+    return {"message": "Everything's fine"}
 
 @app.post("/api/quiz")
 async def receive_quiz(payload: QuizRequest, background_tasks: BackgroundTasks):

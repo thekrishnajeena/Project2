@@ -36,7 +36,7 @@ AUDIO_EXTENSIONS = {
 
 # LLM Config
 LLM_API_URL = "https://aipipe.org/openrouter/v1/chat/completions"
-LLM_API_KEY = os.getenv("LLM_API_KEY") or "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjI0ZjIwMDU4OTRAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.11Pa3UNcezX27plvgMxnAvONVP2IsVa6ynIUVYuZuoY"
+LLM_API_KEY = os.getenv("LLM_API_KEY")
 LLM_MODEL = "gpt-5-nano"
 LLM_TIMEOUT = 120.0  # Increased timeout
 
