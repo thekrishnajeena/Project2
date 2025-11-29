@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+httpx
+playwright
+pydantic
+requests
+pandas
+pdfplumber
+faster-whisper
+sentencepiece
+ctranslate2
+matplotlib
+beautifulsoup4
+tabulate
